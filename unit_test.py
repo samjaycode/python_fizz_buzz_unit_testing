@@ -3,10 +3,13 @@
 #on 8/19/16
 #unit testing
 
-import count_10 as l
+from count_10 import fizzbuzz
+#unit testing return values from function
 
-#run for loop with “l” array
-   #test any numbers with an if statement to see if they can be divided by 3 or 5
-   
-   #if no errors show true
-   
+assert fizzbuzz(5) == 'buzz'
+
+assert fizzbuzz(3) == 'fizz'
+
+assert fizzbuzz(15) == 'fizz buzz'
+
+assert fizzbuzz(1) == 1
